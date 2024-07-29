@@ -10,9 +10,9 @@ The game uses `binkw32.dll` as a video player. This is our entry point. We owe a
 The original `binkw32.dll` in the game's folder is renamed to `binkw32Hooked.dll`, and the 32-bit variant of the Ultimate-ASI-Loader `binkw32.dll` is placed in the game's root directory. This setup allows us to load `.asi` files into the game's memory, enabling modifications to the game's code and behavior. The plugins are essentially `.dll` files that are loaded into the game; I developed them using C++.
 
 ## Plugin Examples
-I have included some plugin examples along with their source code to help you understand how the plugins work:
+I have included some plugin examples along with their source code to help you understand how the plugins work `(Plugins are developed in VS2022 with v143 toolset)`:
 
-- **SkipOutro**: Skips the Trackmania.com video when exiting the game and immediately ends the execution of the game engine, allowing for faster game exits.
+- [SkipOutro](https://github.com/Delorean12DMC/tmnf-plugins/tree/main/examples/SkipOutro/Build): Skips the Trackmania.com video when exiting the game and immediately ends the execution of the game engine, allowing for faster game exits.
 - More to come...
 
 ## Develop Your Own Plugins
